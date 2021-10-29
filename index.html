@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="createTable()">
+    <div class="table container">
+        <h3>Tələbə siyahısı</h3>
+        <div class="header">
+            <h5>Tələbənin tam adı</h5>
+            <input type="text">
+            <div class="tools tools-one">
+                <div class="icon-1">
+                    <i class="fab fa-asymmetrik"></i>
+                    <i class="fas fa-paint-brush"></i>
+                    <i class="fas fa-key"></i>
+                    <i class="fas fa-bars"></i>
+                    <i class="far fa-edit"></i>
+                </div>
+                <div class="icon-2">
+                    <select name="" id="">
+                        <option value="">2</option>
+                    </select>
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-arrows-alt"></i>
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-group">
+                <div class="btn">
+                    <button type="submit" id="addRow" onclick="addRow()">Əlavə et</button>
+                </div>
+                <div class="tools tools-two">
+                    <div class="icon-1">
+                        <i class="fab fa-asymmetrik"></i>
+                        <i class="fas fa-paint-brush"></i>
+                        <i class="fas fa-key"></i>
+                        <i class="fas fa-bars"></i>
+                        <i class="far fa-edit"></i>
+                    </div>
+                    <div class="icon-2">
+                        <select name="" id="">
+                            <option value="">12</option>
+                        </select>
+                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-arrows-alt"></i>
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="up">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-table"></i>
+                <i class="fas fa-inbox"></i>
+                <i class="fas fa-expand-arrows-alt"></i>
+                <i class="far fa-trash-alt"></i>
+                <select name="" id="">
+                    <option value="">1</option>
+                </select>
+            </div>
+
+            <div id="cont">
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-main">
+                <div class="modal-main-one">
+                    <h5>İmtahan adı</h5>
+                    <select name="" id="subject">
+                        <option value="Riyaziyyat">Riyaziyyat</option>
+                        <option value="Fizika">Fizika</option>
+                        <option value="Kimya">Kimya</option>
+                    </select>
+                </div>
+                <div class="modal-main-two">
+                    <h5>Qiymət</h5>
+                    <input id="price" type="text">
+                </div>
+                <div class="modal-main-three">
+                    <button type="submit" id="addRow2" onclick="addRow2()">Əlavə et</button>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <div class="up">
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-table"></i>
+                    <i class="fas fa-inbox"></i>
+                    <i class="fas fa-expand-arrows-alt"></i>
+                    <i class="far fa-trash-alt"></i>
+                    <select name="" id="">
+                        <option value="">1</option>
+                    </select>
+                </div>
+
+                <div id="cont2">
+
+                </div>
+
+                <div class="modal-button">
+                    <div class="btn-3">
+                        <button type="button">Bağla</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
